@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+
+
+#CardsSlider {
+  height: 100%;
+}
+
+.mySwiperPlan {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+#slidePlan {
+  background-position: center;
+  background-size: cover;
+  width: 375px;
+  height: 590px;
+}
+
+
+
+#lvl1{
+  font-size: 60px;
+  font-family: 'Fredoka One';
+  font-weight: 100;
+}
+
+#lvl2{
+  font-size:18px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#lvl3{
+  font-size: 40px;
+  font-family: 'Fredoka One';
+  font-weight: 100;
+
+}
+
+#lvl4{
+  font-family: 'Poppins', sans-serif;
+  font-size: 80px;
+}
+
+#lvl5{
+  font-size:18px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+#lvl6{
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#soles {
+  margin-top: 45px;
+  margin-bottom: 10px;
+}
+
+#ofIn{
+  font-family: 'Fredoka One';
+  font-weight: 500;
+  font-size: 65px;
+}
+
+#ofIn2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 35px;
+}

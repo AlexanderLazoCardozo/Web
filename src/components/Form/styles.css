@@ -1,9 +1,0 @@
-label {
-  margin: 1000px;
-}
-
-@media screen and (min-width: 960px) {
-  #botonForm {
-    width: 40%;
-  }
-}

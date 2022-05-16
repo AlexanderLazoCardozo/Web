@@ -1,79 +1,86 @@
 import React from 'react'
-import { Grid } from 'semantic-ui-react';
+import { Grid, Icon } from 'semantic-ui-react';
 import WasiFooter from "../../images/WasiFooter.png"
+import wasiLogo from "../../images/wasiLogo.png"
+
+import Legal from './Accordion/Legal';
+import Contacto from './Accordion/Contacto';
+import Atencion from './Accordion/Atencion';
+
 import styled from "styled-components";
 
+const StyleFooter = styled.div`
 
-const Footer = () => {
-    const StyleFooter = styled.div`
-
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1215px) {
             display:none;
         }`;  
     const StyleFooter2 = styled.div`
-        @media screen and (min-width: 1000px) {
+        @media screen and (min-width: 1215px) {
             display:none;
         }
-        @media screen and (max-width: 1000px) {
+        @media screen and (max-width: 1215px) {
             display:block;
     }`;  
+
+const Footer = () => {
+    
        
   return (
     <>
     <StyleFooter>
     <div  id='computer'>   
-        <br /><br /><br />
+        <br />
         <Grid centered  >
         <Grid.Row  columns={5}>
         <Grid.Column>
-            <img style={{width:"200px",marginTop:"90px",marginLeft:"-40px"}} src={WasiFooter}></img>
+            <Grid>
+                <Grid.Row>
+                <img style={{width:"200px",marginTop:"50px",marginLeft:"-40px"}} src={wasiLogo}></img>
+                </Grid.Row>
+                <Grid.Row style={{fontSize:"35px", textAlign:"center"}}>
+                    <Grid.Column  style={{marginLeft:"-40px"}}>
+                    <a href='https://www.facebook.com/wasiperu.pe' target="_blank">
+                    <Icon style={{color:"#66277d"}}  name='facebook official' />
+                    </a>
+                    </Grid.Column>
+
+                    <Grid.Column  style={{marginLeft:"20px"}}>
+                    <a href='https://www.instagram.com/wasiperu.pe/' target="_blank">
+
+                    <Icon style={{color:"#66277d"}} name='instagram' />
+                    </a>
+                    </Grid.Column>
+                    
+                    <Grid.Column style={{marginLeft:"20px"}}>
+                    <a href='https://www.youtube.com/channel/UC66bN-db1VOufgDGvZ8ojyg' target="_blank">
+
+                    <Icon style={{color:"#66277d"}} name='youtube' />
+                    </a>
+                    </Grid.Column>
+
+                    <Grid.Column style={{marginLeft:"20px"}}>
+                    <a href='https://www.linkedin.com/in/wasiperuinternet/' target="_blank">
+
+                    <Icon style={{color:"#66277d"}} name='linkedin' />
+                    </a>
+                    </Grid.Column>
+                </Grid.Row>
+            </Grid>
         </Grid.Column>   
         <Grid.Column> 
-            <h1>Contáctanos</h1>
-            <b>Dirección Fiscal</b><br />
-            <>Av santa rosa 1050 - Santa anita</><br/>
-            <>Lima, Perú</>
+            <h1 style={{color:"#00277C",fontFamily:"Poppins, sans-serif", fontWeight:"550"}}>Contáctanos</h1>
+            <Contacto />
             
-            <br /><br />
-            <b>Atención al Cliente</b><br />
-            <>956 859 217</><br />
-            <>atencioncliente@wasiperu.pe</>
-
-            <br /><br />
-            <b>Soporte Técnico</b><br />
-            <>946 436 658</><br />
-            <>soporte@wasiperu.pe</>
-
-            <br /><br />
-            <b>Soporte Técnico</b><br />
-            <>956 880 681</><br />
-            <>ventas@wasiperu.pe</>
-
-            <br /><br />
-            <b>Soporte Técnico</b><br />
-            <>981 056 606</><br />
-            <>facturacion@wasiperu.pe</>
         </Grid.Column>
         <Grid.Column>
-            <h1>Legal y Regulatorio</h1><br/>
-            <li>Términos y Condiciones</li>
-            <li>Baja del servicio</li>
-            <li>Formulario de Reclamo</li>
-            <li>Condiciones del uso de Servicio</li>
-            <li>Requisitos de acceso al servicio</li>
-            <li>Tarifas Wasi</li>
-            <li>Neutralidad de la Red</li>
-            <li>Condiciones uso sitio web Wasi</li>
-            <li>Protección de Datos Wasi</li>
+        <div style={{marginTop:"50px"}}></div>
+            <Legal />
+            
         </Grid.Column>
         <Grid.Column>
-            <h1>Atención de Reclamos y Solicitudes en Línea</h1>
-            <li>Atención de Reclamos</li>
-            <li>Solicitudes en Línea - Soporte</li>
-            <li>Solicitudes en Línea - Post Venta</li>
-            <li>Solicitudes en Línea - Venta</li>
-            <h1>Condiciones del Uso de Servicio</h1>
-            <li>Planes de Servicio y Consideraciones</li>
+            <div style={{marginTop:"50px"}}></div>
+            <Atencion />
+            
         </Grid.Column>
         </Grid.Row>
         </Grid>
@@ -81,62 +88,65 @@ const Footer = () => {
     <br/><br/><br/>
     </StyleFooter>
     <StyleFooter2 >
-    <div id='movil'>
-        <br /><br /><br />
-        <Grid centered columns={2} >
-        <Grid.Row style={{marginLeft:"50px"}} >
-        <Grid.Column>
-            <img style={{width:"200px",marginTop:"90px",marginLeft:"20px"}} src={WasiFooter}></img>
-        </Grid.Column>   
-        <Grid.Column  >
-            <h1>Contáctanos</h1>
-            <b>Dirección Fiscal</b><br />
-            <>Av santa rosa 1050 - Santa anita</><br/>
-            <>Lima, Perú</>
-            
-            <br /><br />
-            <b>Atención al Cliente</b><br />
-            <>956 859 217</><br />
-            <>atencioncliente@wasiperu.pe</>
+    <div >
+        <Grid style={{marginRight:"6%"}} centered columns={2} >
+        <Grid.Row  >
+        <Grid centered columns={8}>
+                <Grid.Row>
+                <img style={{width:"200px"}} src={wasiLogo}></img>
+                </Grid.Row>
+                <Grid.Row style={{fontSize:"40px", textAlign:"center"}}>
+                <Grid.Column  style={{marginLeft:"-40px"}}>
+                    
+                    </Grid.Column>
+                    <Grid.Column  style={{marginLeft:"-40px"}}>
+                    <a href='https://www.facebook.com/wasiperu.pe' target="_blank">
+                    <Icon style={{color:"#66277d"}}  name='facebook official' />
+                    </a>
+                    </Grid.Column>
 
-            <br /><br />
-            <b>Soporte Técnico</b><br />
-            <>946 436 658</><br />
-            <>soporte@wasiperu.pe</>
+                    <Grid.Column  style={{marginLeft:"20px"}}>
+                    <a href='https://www.instagram.com/wasiperu.pe/' target="_blank">
 
-            <br /><br />
-            <b>Soporte Técnico</b><br />
-            <>956 880 681</><br />
-            <>ventas@wasiperu.pe</>
+                    <Icon style={{color:"#66277d"}} name='instagram' />
+                    </a>
+                    </Grid.Column>
+                    
+                    <Grid.Column style={{marginLeft:"20px"}}>
+                    <a href='https://www.youtube.com/channel/UC66bN-db1VOufgDGvZ8ojyg' target="_blank">
 
-            <br /><br />
-            <b>Soporte Técnico</b><br />
-            <>981 056 606</><br />
-            <>facturacion@wasiperu.pe</>
-        </Grid.Column>
+                    <Icon style={{color:"#66277d"}} name='youtube' />
+                    </a>
+                    </Grid.Column>
+
+                    <Grid.Column style={{marginLeft:"20px"}}>
+                    <a href='https://www.linkedin.com/in/wasiperuinternet/' target="_blank">
+
+                    <Icon style={{color:"#66277d"}} name='linkedin' />
+                    </a>
+                    </Grid.Column>
+                </Grid.Row>
+            </Grid>
+         
+        
         </Grid.Row>
         <Grid.Row style={{marginLeft:"50px"}}>
+        <Grid.Column  >
+            <h1 style={{color:"#00277C",fontFamily:"Poppins, sans-serif", fontWeight:"550"}}>Contáctanos</h1>
+            <Contacto />
+
+
+        </Grid.Column>
+        
         <Grid.Column >
-            <h1>Legal y Regulatorio</h1><br/>
-            <li>Términos y Condiciones</li>
-            <li>Baja del servicio</li>
-            <li>Formulario de Reclamo</li>
-            <li>Condiciones del uso de Servicio</li>
-            <li>Requisitos de acceso al servicio</li>
-            <li>Tarifas Wasi</li>
-            <li>Neutralidad de la Red</li>
-            <li>Condiciones uso sitio web Wasi</li>
-            <li>Protección de Datos Wasi</li>
+            <div style={{marginTop:"50px", marginRight:"10%"}}>
+            <Atencion />
+            <br/><br/>
+            <Legal />
+
+            </div>
         </Grid.Column>
-        <Grid.Column>
-            <h1>Atención de Reclamos y Solicitudes en Línea</h1>
-            <li>Atención de Reclamos</li>
-            <li>Solicitudes en Línea - Soporte</li>
-            <li>Solicitudes en Línea - Post Venta</li>
-            <li>Solicitudes en Línea - Venta</li>
-            <h1 style={{marginTop:"8px"}}>Condiciones del Uso de Servicio</h1>
-            <li>Planes de Servicio y Consideraciones</li>
-        </Grid.Column>
+        
         </Grid.Row>
         </Grid>
     </div>

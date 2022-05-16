@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+.swiper-slide #card2 {
+  height: 290px;
+}
+
+#preg2 {
+  height: 170px;
+}
+
+.sliderBLog{
+  margin:auto auto;
+}
+
+#disfruta {
+  font-family: 'Poppins', sans-serif;
+
+}
+
+#ultimo {
+  font-family: 'Poppins', sans-serif;
+
+}

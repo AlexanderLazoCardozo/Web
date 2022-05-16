@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+/*Altura del slider*/
+
+
+.swiper-slide #card {
+  height: 260px;
+}
+
+#preg {
+  height: 170px;
+}
+
+#soluciones{
+  color: #00277C;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+
+}
+
+#frecu {
+  font-family: 'Poppins', sans-serif;
+
+}
+
+#pingLat{
+  font-family: 'Poppins', sans-serif;
+  margin: 10px;
+  font-size: 18px;
+  color:#00277C;
+
+}
+
+#preguntasF{
+  font-family: 'Poppins', sans-serif;
+  margin: 10px;
+  font-size: 18px;
+  color:#00277C;
+}

@@ -11,9 +11,9 @@ import {
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons";
 import wasiLogo from "../../images/wasiLogo.png"
-import { Sticky } from "semantic-ui-react";
-import {NavLink ,Link } from 'react-router-dom';
+import {NavLink , Outlet } from 'react-router-dom';
 
+import "./estilos1.css" 
 
 const Navbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -23,12 +23,13 @@ const Navbar = () => {
   };
   return (
     <>
-    <Sticky>
-      <Container >
-        <Wrapper >
+      <Container style={{position:"fixed",boxShadow: "0px 15px 20px 5px rgba(0, 0, 0, 0.2)"}}>
+        <Wrapper style={{}}>
           <IconContext.Provider value={{ color: "#5b287a", size: "1.8em" }}>
             <IconContainer showMobileMenu={showMobileMenu}>
+              <NavLink to="/">
                 <img style={{width:"100px"}} src={wasiLogo} />
+              </NavLink>
             </IconContainer>
 
             <MobileMenuIcon onClick={() => handleShowMobileMenu()}>
@@ -36,37 +37,39 @@ const Navbar = () => {
             </MobileMenuIcon>
 
             <Menu  showMobileMenu={showMobileMenu}>
-              <NavLink to="/">
-              <MenuItem   onClick={() => handleShowMobileMenu()}>
-                    <MenuItemLink   >INICIO</MenuItemLink>
-                    <hr />
-              </MenuItem>
-              </NavLink>
+             
 
-              <NavLink   to="/Nosotros">
+              <NavLink  to="/Nosotros">
               <MenuItem  onClick={() => handleShowMobileMenu()}>
-                    <MenuItemLink >NOSOTROS</MenuItemLink>
+                    <MenuItemLink id="nos" >Nosotros</MenuItemLink>
                     <hr />
               </MenuItem>
               </NavLink>
 
               <NavLink to="/Contacto">
               <MenuItem onClick={() => handleShowMobileMenu()}>
-                <MenuItemLink>CONTACTO</MenuItemLink>
+                <MenuItemLink  id="nos">Contacto</MenuItemLink>
                 <hr />
               </MenuItem>
               </NavLink> 
 
               <NavLink to="/Planes">
               <MenuItem onClick={() => handleShowMobileMenu()}>
-                <MenuItemLink> PLANES </MenuItemLink>
+                <MenuItemLink id="nos"> Planes </MenuItemLink>
+                <hr />
+              </MenuItem>
+              </NavLink>
+
+              <NavLink to="/Blog">
+              <MenuItem onClick={() => handleShowMobileMenu()}>
+                <MenuItemLink id="nos"> Blog </MenuItemLink>
                 <hr />
               </MenuItem>
               </NavLink>
 
               <NavLink  to="/Solicitar">
               <MenuItem  onClick={() => handleShowMobileMenu()}>
-                <MenuItemLink style={{fontSize:"20px"}}> SOLICITAR </MenuItemLink>
+                <MenuItemLink id="nos2"> SOLICITAR </MenuItemLink>
                 <hr />
               </MenuItem>
               </NavLink> 
@@ -75,7 +78,7 @@ const Navbar = () => {
           </IconContext.Provider>
         </Wrapper>
       </Container>
-    </Sticky> 
+      <Outlet />
     </>
   );
 };

@@ -4,6 +4,8 @@ export const Container = styled.div`
   width: 100%;
   height: 70px;
   background-color: white;
+  z-index: 1000;
+
 `;
 
 export const Wrapper = styled.div`
@@ -28,7 +30,7 @@ export const IconContainer = styled.div`
 
 export const Menu = styled.ul`
 margin:0;
-z-index: 999;
+z-index: 1000;
 paddingLeft: 100px;
   height: 100%;
   display: flex;
@@ -50,7 +52,7 @@ paddingLeft: 100px;
 
 export const MenuItem = styled.li`
   margin:0;
-  z-index: 999;
+  z-index: 1000;
   cursor: pointer;
   height: 100%;
   display: flex;

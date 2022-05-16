@@ -2,14 +2,113 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="data:image/png;base64,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" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wasi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PBN7WNE8WJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PBN7WNE8WJ');
+</script>
+
+
+
+    <title>Wasi Perú</title>
   </head>
+
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-    
+    <script src="https://getchat.app/assets/js/min/getchatapp.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var gcaMain = new GetChatApp({
+        'mobileNumber' : '+51 956 880 681',
+        'titleMessage' : 'Wasi',
+        'welcomeMessage': 'Hola!🙌<br /> <br /> Siéntete libre de escribirnos y nos pondremos en contacto contigo.',
+        'position' : 'left',
+        'platforms' : {
+            'whatsapp' : true,
+            'facebook' : false,
+            'email' : false,
+            'instagram' : false,
+            'telegram' : false,
+        }
+      });
+    });
+    </script>
+
+<!-- Getchatbutton.com widget -->
+<script type="text/javascript">
+  var refJSON = {"isPreview":false,"greetingEnabled":false,"greetingTitle":"Message Us","greetingMessage":"Hello, how may we help you? Just send us a message now to get assistance.","position":"right","verticalOffset":0,"horizontalOffset":0,"displayMode":"everywhere","primaryColor":"#3068F6","isDefaultMainCBImage":true,"mainCBImage":"https://app.getchatbutton.com/assets/cb/cb/main-transparent.png","bottomLabel":null,"callToAction":"Escríbenos","greetingIcon":"https://app.getchatbutton.com/assets/cb/cb/empty-avatar.png","items":[{"name":"Messenger","slug":"messenger","target":"116510430260286","color":"#0D8BFF","faName":["fab","facebook-messenger"],"link":"https://m.me/","placeholder":"Facebook page ID (e.g. 580097572666574)","showInputHint":true}],"env":"production"}
+  var baseURL = "https://static.getchatbutton.com"
+  
+  function loadCB() {
+  
+    var rootDiv = document.createElement("div")
+    rootDiv.id = "oursky-cb"
+    document.body.appendChild(rootDiv)
+  
+    var fbRoot = document.createElement("div")
+    fbRoot.id = "fb-root"
+    fbRoot.style.opacity = "0"
+    document.body.appendChild(fbRoot)
+  
+    var fbCustomerChat = document.createElement("div")
+    fbCustomerChat.id = "fb-customer-chat"
+    fbCustomerChat.classList.add("fb-customerchat")
+    document.body.appendChild(fbCustomerChat)
+  
+    if (!document.getElementById("facebook-jssdk")) {
+      var script = document.createElement("script")
+      script.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js"
+      script.crossOrigin = "anonymous"
+      document.body.appendChild(script)
+    }
+  
+  
+    fetch(baseURL + '/asset-manifest.json')
+      .then(function (response) { return response.json() })
+      .then(function (data) {
+  
+        const entryPoints = data.entrypoints
+        entryPoints.forEach(function (entryPoint) {
+          var url = baseURL + '/' + entryPoint
+          if (url.endsWith(".js")) {
+            var script = document.createElement("script")
+            script.src = url
+            document.body.appendChild(script)
+          } else if (url.endsWith(".css")) {
+            var stylesheet = document.createElement("link")
+            stylesheet.href = url
+            stylesheet.rel = "stylesheet"
+            document.head.appendChild(stylesheet)
+          }
+        })
+        // console.log("[cb] script loaded")
+      })
+      .catch(function (error) {
+        console.error("[cb] unable to load GetChatButton from manifest")
+      })
+  }
+  
+  if (document.readyState !== 'complete') {
+    window.addEventListener('load', loadCB)
+  } else {
+    loadCB()
+  }
+      
+  </script>
+  
+
   </body>
 </html>

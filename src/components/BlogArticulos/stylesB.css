@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+#tabBase{
+    margin:auto 2%;
+    margin-right: 10%;
+}
+
+.bannerBlog {
+    width:10%
+}
+
+#cabeceras {
+    font-family: 'Poppins', sans-serif;
+}
+
+#titulares {
+    font-family: 'Poppins', sans-serif;
+    margin: 9px;
+    color:#372C70;
+    font-size: 18px;
+}
